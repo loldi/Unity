@@ -4,6 +4,7 @@ using System.Collections;
 public class destroy : MonoBehaviour {
 
 	public GameObject explosion;
+	public GameObject nonDestroyableExplosion;
 	
 	// Update is called once per frame
 	void Update () {
@@ -19,6 +20,21 @@ public class destroy : MonoBehaviour {
 			float damageDone = 100.0f;
 			//Debug.Log ("Hit");
 			Instantiate (explosion, other.transform.position, Quaternion.identity);
+			other.gameObject.SendMessage("BlowUp", damageDone, SendMessageOptions.DontRequireReceiver);
+			Destroy(this.gameObject);
+		}
+
+		if (other.gameObject.tag == "NonDestroyable") {
+			float damageDone = 0.0f;
+			//Debug.Log ("Hit");
+			Instantiate (nonDestroyableExplosion, this.transform.position, Quaternion.identity);
+			//other.gameObject.SendMessage("StayHere", damageDone, SendMessageOptions.DontRequireReceiver);
+			Destroy(this.gameObject);
+		}
+		if (other.gameObject.tag == "Destroyable") {
+			float damageDone = 100.0f;
+			//Debug.Log ("Hit");
+			Instantiate (nonDestroyableExplosion, this.transform.position, Quaternion.identity);
 			other.gameObject.SendMessage("BlowUp", damageDone, SendMessageOptions.DontRequireReceiver);
 			Destroy(this.gameObject);
 		}

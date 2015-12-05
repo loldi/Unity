@@ -51,6 +51,7 @@
      <Compile Include="Assets\scripts\playerShoot.cs" />
      <Compile Include="Assets\scripts\serialMove.cs" />
      <Compile Include="Assets\scripts\tankBehavior.cs" />
+     <Compile Include="Assets\scripts\wallBehavior.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

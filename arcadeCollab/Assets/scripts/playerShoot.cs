@@ -11,7 +11,11 @@ public class playerShoot : MonoBehaviour {
 
 	public GameObject tank1;
 	public GameObject tank2;
-	
+	private float recoil = 20.0f ;
+	public float recoilTwist = 0.005f;
+
+
+
 	// Update is called once per frame
 	void Update () 
 	{
@@ -43,5 +47,8 @@ public class playerShoot : MonoBehaviour {
 		bPrefab.AddForce(tank.transform.right * bulletSpeed);
 		
 		coolDown = Time.time + attackSpeed;
+
+		tank.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector2.left * recoil);
+		//tank.GetComponent<Rigidbody2D> ().AddTorque (Random.Range(-recoilTwist, recoilTwist));
 	}
 }

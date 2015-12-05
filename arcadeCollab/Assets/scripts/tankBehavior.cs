@@ -17,7 +17,11 @@ public class tankBehavior : MonoBehaviour {
 	void Update () {
 		if (!dead && (tankHealth <= 0)) {
 			this.GetComponent<SpriteRenderer> ().enabled = false;
-			this.GetComponent<BoxCollider2D> ().enabled = false;
+			//this.GetComponents<BoxCollider2D> ().enabled = false;
+			BoxCollider2D[] hitBoxes = this.GetComponents<BoxCollider2D> ();
+			foreach (BoxCollider2D hitBox in hitBoxes) {
+				hitBox.enabled = false;
+			}
 			dead = true;
 			respawnTime = Time.time + deathDelay;
 
@@ -29,7 +33,11 @@ public class tankBehavior : MonoBehaviour {
 			dead = false;
 			Debug.Log ("Respawn");
 			this.GetComponent<SpriteRenderer> ().enabled = true;
-			this.GetComponent<BoxCollider2D> ().enabled = true;
+			//this.GetComponents<BoxCollider2D> ().enabled = true;
+			BoxCollider2D[] hitBoxes = this.GetComponents<BoxCollider2D> ();
+			foreach (BoxCollider2D hitBox in hitBoxes) {
+				hitBox.enabled = true;
+			}
 			tankHealth = 100.0f;
 			this.transform.position = originalPosition;
 		}
