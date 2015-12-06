@@ -5,7 +5,7 @@ public class tankBehavior : MonoBehaviour {
 
 	public float tankHealth = 100.0f;
 	public bool dead = false;
-	public float deathDelay = 3.0f;
+	private float deathDelay = 3.5f;
 	public float respawnTime = 0.0f;
 	private Vector3 originalPosition;
 	// Use this for initialization
@@ -25,13 +25,13 @@ public class tankBehavior : MonoBehaviour {
 			dead = true;
 			respawnTime = Time.time + deathDelay;
 
-			Debug.Log (respawnTime);
+
 		}
 
 		//ebug.Log (Time.time);
 		if (dead && (Time.time > respawnTime)) {
 			dead = false;
-			Debug.Log ("Respawn");
+			//Debug.Log ("Respawn");
 			this.GetComponent<SpriteRenderer> ().enabled = true;
 			//this.GetComponents<BoxCollider2D> ().enabled = true;
 			BoxCollider2D[] hitBoxes = this.GetComponents<BoxCollider2D> ();

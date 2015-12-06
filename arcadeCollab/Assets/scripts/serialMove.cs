@@ -24,7 +24,7 @@ public class serialMove : MonoBehaviour {
 	private float turnPower2 = 0;
 
 	private float turnFactor = 0.01f;
-	private float speedFactor = 0.02f;
+	private float speedFactor = 0.05f;
 		
 	void Start () {
 		string[] portList= SerialPort.GetPortNames();
@@ -70,8 +70,7 @@ public class serialMove : MonoBehaviour {
 		turnPower1 = (crankSpeed1 - crankSpeed2) * turnFactor;
 		turnPower2 = (crankSpeed3 - crankSpeed4) * turnFactor; 
  
-		tank1.transform.Rotate (Vector3.forward * turnPower1);
-		tank2.transform.Rotate (Vector3.forward * turnPower2);
+
 
 		if (tankBehavior1.dead) {
 			tankSpeed1 = 0;
@@ -79,9 +78,12 @@ public class serialMove : MonoBehaviour {
 		if (tankBehavior2.dead) {
 			tankSpeed2 = 0;
 		}
-		tank1.GetComponent<Rigidbody2D>().AddRelativeForce (Vector3.right * tankSpeed1 * speedFactor);
-		tank2.GetComponent<Rigidbody2D>().AddRelativeForce (Vector3.right * tankSpeed2 * speedFactor);
-
+		if (global.playState == 1) {
+			tank1.transform.Rotate (Vector3.forward * turnPower1);
+			tank2.transform.Rotate (Vector3.forward * turnPower2);
+			tank1.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector3.right * tankSpeed1 * speedFactor);
+			tank2.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector3.right * tankSpeed2 * speedFactor);
+		}
 
 	}
 	

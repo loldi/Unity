@@ -45,9 +45,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\brickBehavior.cs" />
      <Compile Include="Assets\scripts\cameraFollow.cs" />
      <Compile Include="Assets\scripts\destroy.cs" />
      <Compile Include="Assets\scripts\endExplosion.cs" />
+     <Compile Include="Assets\scripts\fortBehavior.cs" />
+     <Compile Include="Assets\scripts\fortSpawn.cs" />
+     <Compile Include="Assets\scripts\global.cs" />
      <Compile Include="Assets\scripts\playerShoot.cs" />
      <Compile Include="Assets\scripts\serialMove.cs" />
      <Compile Include="Assets\scripts\tankBehavior.cs" />

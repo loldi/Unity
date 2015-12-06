@@ -1,13 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\tankBehavior.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\fortSpawn.cs">
     <Files>
-      <File FileName="Assets\scripts\serialMove.cs" Line="27" Column="33" />
-      <File FileName="Assets\scripts\destroy.cs" Line="37" Column="17" />
-      <File FileName="Assets\scripts\cameraFollow.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\playerShoot.cs" Line="43" Column="18" />
-      <File FileName="Assets\scripts\endExplosion.cs" Line="16" Column="30" />
-      <File FileName="Assets\scripts\tankBehavior.cs" Line="29" Column="4" />
+      <File FileName="Assets\scripts\fortSpawn.cs" Line="34" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
