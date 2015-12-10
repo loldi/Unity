@@ -2,7 +2,15 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\fortSpawn.cs">
     <Files>
-      <File FileName="Assets\scripts\fortSpawn.cs" Line="34" Column="3" />
+      <File FileName="Assets\scripts\fortSpawn.cs" Line="27" Column="1" />
+      <File FileName="Assets\scripts\fortBehavior.cs" Line="12" Column="25" />
+      <File FileName="Assets\scripts\destroy.cs" Line="17" Column="26" />
+      <File FileName="Assets\scripts\wallBehavior.cs" Line="16" Column="1" />
+      <File FileName="Assets\scripts\endExplosion.cs" Line="22" Column="58" />
+      <File FileName="Assets\scripts\tankBehavior.cs" Line="8" Column="32" />
+      <File FileName="Assets\scripts\playerShoot.cs" Line="72" Column="26" />
+      <File FileName="Assets\scripts\global.cs" Line="15" Column="1" />
+      <File FileName="Assets\scripts\serialMove.cs" Line="83" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

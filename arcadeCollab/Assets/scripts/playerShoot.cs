@@ -29,6 +29,10 @@ public class playerShoot : MonoBehaviour {
 	public GameObject startScreen;
 	public GameObject endScreen;
 
+	public GameObject wallPos1;
+	public GameObject wallPos2;
+	public GameObject wallPos3;
+
 	// Update is called once per frame
 	void Update () {
 		camShake1 = CameraShake (camera1, camShake1);
@@ -56,6 +60,20 @@ public class playerShoot : MonoBehaviour {
 
 				global.playState = 1;
 			}
+			if(global.wallPos == 1){
+				Instantiate(wallPos1, new Vector3(0,0,0), Quaternion.identity);
+				wallPos1.SetActive(true);
+				global.wallPos = 0;
+			} else if(global.wallPos == 2){
+				Instantiate(wallPos2, new Vector3(0,0,0), Quaternion.identity);
+				wallPos2.SetActive(true);
+				global.wallPos = 0;
+			} else if(global.wallPos == 3){
+				Instantiate(wallPos3, new Vector3(0,0,0), Quaternion.identity);
+				wallPos3.SetActive(true);
+				global.wallPos = 0;
+			}
+
 		}
 
 		if (global.playState == 2) {
