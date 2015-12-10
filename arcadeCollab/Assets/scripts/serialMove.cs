@@ -52,10 +52,10 @@ public class serialMove : MonoBehaviour {
 				//Debug.Log (serialInput);
 				//int.Parse(strEul[2]
 
-				crankSpeed1 = crankSpeed1 - 511;
-				crankSpeed2 = crankSpeed2 - 511;
-				crankSpeed3 = crankSpeed3 - 511;
-				crankSpeed4 = crankSpeed4 - 511;
+				crankSpeed1 = crankSpeed1;
+				crankSpeed2 = crankSpeed2;
+				crankSpeed3 = crankSpeed3;
+				crankSpeed4 = crankSpeed4;
 			}
 			
 			stream.Close ();

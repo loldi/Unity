@@ -27,7 +27,8 @@ public class playerShoot : MonoBehaviour {
 
 	public Camera splashCam;
 	public GameObject startScreen;
-	public GameObject endScreen;
+	public GameObject greenWin;
+	public GameObject blueWin;
 
 	public GameObject wallPos1;
 	public GameObject wallPos2;
@@ -78,12 +79,14 @@ public class playerShoot : MonoBehaviour {
 
 		if (global.playState == 2) {
 			splashCam.enabled = true;
-			endScreen.GetComponent<SpriteRenderer>().enabled = true;
+
 			if (fortBehavior1.fortHealth <= 0) {
 				Debug.Log (" Player 2 - You win!");
+				blueWin.GetComponent<SpriteRenderer>().enabled = true;
 			}
 			if (fortBehavior2.fortHealth <= 0) {
 				Debug.Log (" Player 1 - You win!");
+				greenWin.GetComponent<SpriteRenderer>().enabled = true;
 			}
 			if ((Input.GetKeyDown (KeyCode.LeftControl)) || (Input.GetKeyDown (KeyCode.RightControl))) {
 				Debug.Log (" Reload");
