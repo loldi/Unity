@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 0c243a7e7192f9248bf32714e51c1286
+timeCreated: 1449271368
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fortstuff_0
+    21300002: fortstuff_1
+    21300004: fortstuff_2
+    21300006: fortstuff_3
+    21300008: fortstuff_4
+    21300010: fortstuff_5
+    21300012: fortstuff_6
+    21300014: fortstuff_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fortstuff_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 194
+        width: 97
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fortstuff_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 153
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fortstuff_2
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 153
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fortstuff_3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 137
+        width: 97
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fortstuff_4
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 15
+        width: 8
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fortstuff_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 17
+        width: 7
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fortstuff_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 18
+        width: 7
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fortstuff_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 23
+        width: 81
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
