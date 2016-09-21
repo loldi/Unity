@@ -58,6 +58,7 @@ public class playerShoot : MonoBehaviour {
 			if ((Input.GetKeyDown (KeyCode.LeftControl)) || (Input.GetKeyDown (KeyCode.RightControl))) {
 				splashCam.enabled = false;
 				startScreen.GetComponent<SpriteRenderer>().enabled = false;
+				this.GetComponent<AudioSource> ().Stop ();
 
 				global.playState = 1;
 			}
