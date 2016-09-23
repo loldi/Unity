@@ -34,6 +34,8 @@ public class playerShoot : MonoBehaviour {
 	public GameObject wallPos2;
 	public GameObject wallPos3;
 
+	private float gameResetCoolDown = 60.0f;
+
 	// Update is called once per frame
 	void Update () {
 		camShake1 = CameraShake (camera1, camShake1);
@@ -84,15 +86,20 @@ public class playerShoot : MonoBehaviour {
 			if (fortBehavior1.fortHealth <= 0) {
 				Debug.Log (" Player 2 - You win!");
 				blueWin.GetComponent<SpriteRenderer>().enabled = true;
+				gameResetCoolDown -= 1 * Time.deltaTime;
 			}
 			if (fortBehavior2.fortHealth <= 0) {
 				Debug.Log (" Player 1 - You win!");
 				greenWin.GetComponent<SpriteRenderer>().enabled = true;
+				gameResetCoolDown -= 1 * Time.deltaTime;
+
 			}
 			if ((Input.GetKeyDown (KeyCode.LeftControl)) || (Input.GetKeyDown (KeyCode.RightControl))) {
-				Debug.Log (" Reload");
-				global.playState = 0;
-				Application.LoadLevel(0);
+				if (gameResetCoolDown >= 0) {
+					Debug.Log (" Reload");
+					global.playState = 0;
+					Application.LoadLevel (0);
+				}
 			}
 		}
 	}
